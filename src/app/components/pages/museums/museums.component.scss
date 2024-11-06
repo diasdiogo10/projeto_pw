@@ -1,0 +1,35 @@
+.museums {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 60px;
+        padding-block: 90px;
+    }
+
+    .museum {
+        &__image {
+            margin-bottom: 10px;
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        &__name {
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        &__category {
+            margin-bottom: 5px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1ch;
+        }
+
+        .btn {
+            margin-top: 15px;
+        }
+    }
+}
+
